@@ -104,6 +104,7 @@ img.center {
     background-image: url("../images/BearValleyLodge.jpg");
     background-size: contain;
     position: absolute;
+    background-repeat: no-repeat;
     top: 4em;
 }
 
@@ -111,12 +112,13 @@ img.center {
     background-image: url("../images/yosemite.jpg");
     background-size: contain;
     position: relative;
+    background-repeat: no-repeat;
     top: 4em;
 }
 
 .yosemite-card {
     position: relative;
-    top: -5em;
+    top: -40em;
 }
 
 .lodging-down {
@@ -233,11 +235,77 @@ img.center {
     right: 7em;
 }
 
-
 .rel-san-francisco {
-    top: 50em;
-    left: 33em;
+    top: 65em;
+    left: 23em;
 }
+
+@media all and (max-width: 1300px) {
+    .rel-chicago {
+        top: 10em;
+        right: 9em;
+    }
+
+    .rel-move {
+        top: 14em;
+        left: 7em;
+    }
+
+    .rel-san-diego {
+        top: 21em;
+        right: 1em;
+    }
+
+    .rel-san-francisco {
+        top: 38em;
+        left: 19em;
+    }
+}
+
+@media all and (max-width: 1450px) {
+    .rel-chicago {
+        top: 10em;
+        right: 9em;
+    }
+
+    .rel-move {
+        top: 18em;
+        left: 7em;
+    }
+
+    .rel-san-diego {
+        top: 21em;
+        right: 1em;
+    }
+
+    .rel-san-francisco {
+        top: 46em;
+        left: 23em;
+    }
+}
+
+@media all and (max-width: 1650px) {
+    .rel-chicago {
+        top: 10em;
+        right: 9em;
+    }
+
+    .rel-move {
+        top: 18em;
+        left: 7em;
+    }
+
+    .rel-san-diego {
+        top: 21em;
+        right: 1em;
+    }
+
+    .rel-san-francisco {
+        top: 46em;
+        left: 23em;
+    }
+}
+
 
 .move-up {
     top: -16em;
@@ -443,7 +511,7 @@ img.center {
 }
 
 .pad-header {
-    padding-top: 10%;
+    padding-top: 5%;
 }
 
 
@@ -1064,12 +1132,14 @@ img.center {
     .bearValley {
         background-image: url("../images/mobileBearValleyLodge.jpg");
         background-size: cover;
+        background-repeat: no-repeat;
         width: 100%;
     }
 
     .yosemite {
         background-image: url("../images/mobileYosemite.jpg");
         background-size: cover;
+        background-repeat: no-repeat;
         width: 100%;
     }
 

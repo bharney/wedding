@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 export class Wedding extends Component {
-   render() {
+    render() {
         return (<div className="container pad-header">
             <div className="row">
                 <div className="col-12">
@@ -45,37 +45,39 @@ export class Wedding extends Component {
                             </div>
                             <div className="col-12 col-md-8">
                                 <h4>The recption dinner will be family style.</h4>
-                                <div className="col-12 col-md-6">
-                                    <ul className="list-group">
-                                        <li className="list-group-item active">
-                                            <h4>Main Course</h4>
-                                        </li>
-                                        <li className="list-group-item">
-                                            <h4>BBQ Ribs</h4>
-                                        </li>
-                                        <li className="list-group-item">
-                                            <h4>Chicken</h4>
-                                        </li>
-                                        <li className="list-group-item">
-                                            <h4>Vegetarian</h4>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div className="col-12 col-md-6">
-                                    <ul className="list-group">
-                                        <li className="list-group-item active">
-                                            <h4>Side Dishes</h4>
-                                        </li>
-                                        <li className="list-group-item">
-                                            <h4>Garden Salad</h4>
-                                        </li>
-                                        <li className="list-group-item">
-                                            <h4>Seasonal Seasonal Vegetables</h4>
-                                        </li>
-                                        <li className="list-group-item">
-                                            <h4>Rosemary Garlic Roasted Potatoes</h4>
-                                        </li>
-                                    </ul>
+                                <div className="row">
+                                    <div className="col-12 col-md-6">
+                                        <ul className="list-group">
+                                            <li className="list-group-item active">
+                                                <h4>Main Course</h4>
+                                            </li>
+                                            <li className="list-group-item">
+                                                <h4>BBQ Ribs</h4>
+                                            </li>
+                                            <li className="list-group-item">
+                                                <h4>Chicken</h4>
+                                            </li>
+                                            <li className="list-group-item">
+                                                <h4>Vegetarian</h4>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div className="col-12 col-md-6">
+                                        <ul className="list-group">
+                                            <li className="list-group-item active">
+                                                <h4>Side Dishes</h4>
+                                            </li>
+                                            <li className="list-group-item">
+                                                <h4>Garden Salad</h4>
+                                            </li>
+                                            <li className="list-group-item">
+                                                <h4>Seasonal Seasonal Vegetables</h4>
+                                            </li>
+                                            <li className="list-group-item">
+                                                <h4>Rosemary Garlic Roasted Potatoes</h4>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>

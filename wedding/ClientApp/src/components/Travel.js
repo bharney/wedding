@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
+import Map from './Map'
 export class Travel extends Component {
     state = {
         bearValley: [{
@@ -30,7 +32,7 @@ export class Travel extends Component {
                     <div className="row p-b-3-em">
                         <div className="col-12 col-md-5 offset-md-1 form-group">
                             <div className="circle-number"><strong>1</strong></div>
-                            <h3><strong>San Francisco Airport <i className="fa fa-long-arrow-right fg-lg" aria-hidden="true" /> Yosemite</strong></h3>
+                            <h3><strong>San Francisco Airport <FontAwesomeIcon icon={faArrowCircleRight} /> Yosemite</strong></h3>
                             <h4>7296 Yosemite Park Way, <br />Yosemite National Park, CA 95389</h4>
                             <br />
                             <a href="https://goo.gl/maps/v5CwC38eAAp"><h4 className="text-uppercase">Get Directions</h4></a>
@@ -40,13 +42,23 @@ export class Travel extends Component {
                                 <h4>Yosemite Cabins<br /><a href="https://goo.gl/maps/v5CwC38eAAp">7296 Yosemite Park Way, Yosemite National Park</a> </h4>
                             </div>
                         </div>
-                        <div className="col-12 col-md-4 form-group p-05-em hidden-xs shadow">
-                            
+                        <div className="col-12 col-md-4 form-group p-05-em d-none d-sm-block shadow">
+                            <Map
+                                containerElement={
+                                    <div style={{ height: `50vh` }} />
+                                }
+                                mapElement={
+                                    <div style={{ height: `50vh` }} />
+                                }
+                                markers={this.state.yosemite}
+                                googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.28"
+                                loadingElement={<div></div>}
+                            />
                         </div>
 
                         <div className="col-12 col-md-5 offset-md-1 form-group">
                             <div className="circle-number"><strong>2</strong></div>
-                            <h3><strong>Yosemite <i className="fa fa-long-arrow-right fg-lg" aria-hidden="true"/> Bear Valley</strong></h3>
+                            <h3><strong>Yosemite <FontAwesomeIcon icon={faArrowCircleRight} /> Bear Valley</strong></h3>
                             <h4>Bear Valley Lodge, <br />265 Bear Valley Rd, <br />Bear Valley, CA 95223</h4>
                             <br />
                             <a href="https://goo.gl/maps/8h23LikRN7J2"><h4 className="text-uppercase">Get Directions</h4></a>
@@ -58,18 +70,38 @@ export class Travel extends Component {
                                 <a href="https://goo.gl/maps/dG91FRRShk62">Bear Valley Lodge 265 Bear Valley Rd, Bear Valley, CA 95223</a>
                             </h4>
                         </div>
-                        <div className="col-12 col-md-4 form-group p-05-em hidden-xs shadow">
-                            
+                        <div className="col-12 col-md-4 form-group p-05-em d-none d-sm-block shadow">
+                            <Map
+                                containerElement={
+                                    <div style={{ height: `50vh` }} />
+                                }
+                                mapElement={
+                                    <div style={{ height: `50vh` }} />
+                                }
+                                markers={this.state.bearValley}
+                                googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.28"
+                                loadingElement={<div></div>}
+                            />
                         </div>
                         <div className="col-12 col-md-5 offset-md-1 form-group">
                             <div className="circle-number"><strong>3</strong></div>
-                            <h3><strong>Bear Valley <i className="fa fa-long-arrow-right fg-lg" aria-hidden="true"/> San Francisco Airport</strong></h3>
+                            <h3><strong>Bear Valley <FontAwesomeIcon icon={faArrowCircleRight} /> San Francisco Airport</strong></h3>
                             <h4>San Francisco International Airport <br />San Francisco, CA 94128</h4>
                             <br />
                             <a href="https://goo.gl/maps/zgj8pVTXqPy"><h4 className="text-uppercase">Get Directions</h4></a>
                         </div>
-                        <div className="col-12 col-md-4 form-group p-05-em hidden-xs shadow">
-                            
+                        <div className="col-12 col-md-4 form-group p-05-em d-none d-sm-block shadow">
+                            <Map
+                                containerElement={
+                                    <div style={{ height: `50vh` }} />
+                                }
+                                mapElement={
+                                    <div style={{ height: `50vh` }} />
+                                }
+                                markers={this.state.airport}
+                                googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.28"
+                                loadingElement={<div></div>}
+                            />
                         </div>
                     </div>
                 </div>
